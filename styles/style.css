@@ -1,8 +1,13 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
 
 :root {
-    --cor-primaria: #F3F5FC;
-    --cor-secundaria: #0A3871;
+    --cor-primeira: #F3F5FC;
+    --cor-segunda: #0A3871;
+    --cor-terceira: #FFFFFF;
+    --cor-quarta: #495057;
+    --cor-quinta: #343A40;
+
+
 
     --fonte-principal: 'Inter', sans-serif;
 }
@@ -13,7 +18,7 @@
 }
 
 body{
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-primeira);
 }
 
 .conteudo {
@@ -30,24 +35,67 @@ body{
 }
 
 .conteudo__criptografia__texto {
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-primeira);
     width: 680px;
-    padding: 48px 168px 240px;
+    height: 48px;
+    top: 168px;
+    left: 240px;
     font-family: var(--fonte-principal);
     font-weight: 400;
     font-size: 32px;
-    color: var(--cor-secundaria);
-    border: var(--cor-primaria);
+    color: var(--cor-segunda);
+    border: var(--cor-primeira);
+}
+
+.conteudo__criptografia__botao {
+    width: 680px;
+    height: 67px;
+    top: 885px;
+    left: 24opx;
+    gap: 24px;
+}
+
+.conteudo__resultado {
+    width: 400px;
+    height: 944px;
+    top: 40px;
+    left: 1000px;
+    border-radius: 32px;
+    background-color: var(--cor-terceira);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo__resultado__img {
+    width: 336px;
+}
+
+.conteudo__resultado__titulo {
+    width: 336px;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--cor-quinta);
+}
+
+.conteudo__resultado__texto {
+    width: 336px;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--cor-quarta);
 }
 
 .rodape {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--cor-secundaria);
+    color: var(--cor-segunda);
 }
 
 .rodape__link {
     text-decoration: none;
-    color: var(--cor-secundaria);
+    color: var(--cor-segunda);
 }
