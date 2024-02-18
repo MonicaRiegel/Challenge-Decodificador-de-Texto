@@ -12,19 +12,20 @@
     <main class="conteudo">
         <img class="conteudo__logo" src="img/Frame 6.png">
         <section class="conteudo__criptografia">
-            <textarea class="conteudo__criptografia__texto">Digite seu texto</textarea>
+            <input type="text" class="conteudo__criptografia__texto">
             <section class="conteudo__criptografia__confirmacao">
                 <div class="conteudo__criptografia__confirmacao__alerta">
                      <img src="img/bi_exclamation-circle-fill.png">
                      <p class="conteudo__criptografia__confirmacao__alerta__mensagem">Apenas letras minúsculas e sem acento.</p>
                 </div>
                 <div class="conteudo__criptografia__confirmacao__botao">
-                    <button class="conteudo__criptografia__confirmacao__botao__botao1">Criptografar</button>
-                    <button class="conteudo__criptografia__confirmacao__botao__botao2">Descriptografar</button>
+                    <button onclick="criptografarTexto()" class="conteudo__criptografia__confirmacao__botao__botao1">Criptografar</button>
+                    <button onclick="descriptografarTexto()" class="conteudo__criptografia__confirmacao__botao__botao2">Descriptografar</button>
                 </div>
             </section>
         </section>
         <section class="conteudo__resultado">
+            <input type="text" id="resultado" class="conteudo__resultado__criptografia">
             <img class="conteudo__resultado__img" src="img/High quality products 1 1.png">
             <h3 class="conteudo__resultado__titulo">Nenhuma mensagem encontrada</h3>
             <p class="conteudo__resultado__texto">Digite um texto que você deseja criptografar ou descriptografar.</p>
@@ -34,6 +35,7 @@
         <p>Mônica Riegel</p>
         <a class="rodape__link" href="https://linkedin.com/in/monica-riegel">https://linkedin.com/in/monica-riegel</a>
         <a class="rodape__link" href="https://github.com/monicariegel">https://github.com/monicariegel</a>
-    </footer>    
+    </footer> 
+    <script src="app.js" defer></script>  
 </body>
 </html>
