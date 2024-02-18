@@ -12,7 +12,18 @@ function criptografarTexto() {
 }
 
 
+function descriptografarTexto() {
+    textoDecodificado = document.querySelector('input').value;
+    if (textoDecodificado.match('[A-Z]')) {
+        var textoDescodificado = textoDecodificado.replace(/UFAT/gi,"U")
+        .replace(/OBTER/gi,"O")
+        .replace(/IMES/gi,"I")
+        .replace(/ENTER/gi,"E")
+        .replace(/AI/gi,"A");
 
+        console.log(textoDescodificado);
+    }
+}
 
 
 
