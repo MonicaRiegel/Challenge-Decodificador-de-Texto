@@ -12,11 +12,11 @@
     <main class="conteudo">
         <img class="conteudo__logo" src="img/Frame 6.png">
         <section class="conteudo__criptografia">
-            <input type="text" class="conteudo__criptografia__texto">
-            <section class="conteudo__criptografia__confirmacao">
+            <textarea id="texto" class="conteudo__criptografia__texto"></textarea>
+            <section class="conteudo__criptografia__confirmacao">                
                 <div class="conteudo__criptografia__confirmacao__alerta">
-                     <img src="img/bi_exclamation-circle-fill.png">
-                     <p class="conteudo__criptografia__confirmacao__alerta__mensagem">Apenas letras minúsculas e sem acento.</p>
+                    <img src="img/bi_exclamation-circle-fill.png">
+                    <p class="conteudo__criptografia__confirmacao__alerta__mensagem">Apenas letras minúsculas e sem acento.</p>
                 </div>
                 <div class="conteudo__criptografia__confirmacao__botao">
                     <button onclick="criptografarTexto()" class="conteudo__criptografia__confirmacao__botao__botao1">Criptografar</button>
@@ -25,10 +25,10 @@
             </section>
         </section>
         <section class="conteudo__resultado">
-            <input type="text" id="resultado" class="conteudo__resultado__criptografia">
-            <img class="conteudo__resultado__img" src="img/High quality products 1 1.png">
-            <h3 class="conteudo__resultado__titulo">Nenhuma mensagem encontrada</h3>
-            <p class="conteudo__resultado__texto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <textarea id="resultado" style="display: block;" class="conteudo__resultado__criptografia"></textarea>
+            <img id="imagem" style="display: block;" class="conteudo__resultado__img" src="img/High quality products 1 1.png">
+            <h3 id="semmensagem" style="display: block;" class="conteudo__resultado__titulo">Nenhuma mensagem encontrada</h3>
+            <p id="digitetexto" style="display: block;" class="conteudo__resultado__texto">Digite um texto que você deseja criptografar ou descriptografar.</p>
         </section>
     </main>
     <footer class="rodape">

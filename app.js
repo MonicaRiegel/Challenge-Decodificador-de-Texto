@@ -1,27 +1,27 @@
 function criptografarTexto() {
-    let texto = document.querySelector('input').value;
+    let texto = document.querySelector('textarea').value;
     if (texto.match('[A-Z]')) {
-        var textoDecodificado = texto.replace(/A/gi,"AI")
+        let textoDecodificado = texto.replace(/A/gi,"AI")
         .replace(/E/gi,"ENTER")
         .replace(/I/gi,"IMES")
         .replace(/O/gi,"OBTER")
         .replace(/U/gi,"UFAT");
 
-        console.log(textoDecodificado);
+        document.getElementById('resultado').value = textoDecodificado;   
     }
 }
 
 
 function descriptografarTexto() {
-    textoDecodificado = document.querySelector('input').value;
+    textoDecodificado = document.querySelector('textarea').value;
     if (textoDecodificado.match('[A-Z]')) {
-        var textoDescodificado = textoDecodificado.replace(/UFAT/gi,"U")
+        let textoDescodificado = textoDecodificado.replace(/UFAT/gi,"U")
         .replace(/OBTER/gi,"O")
         .replace(/IMES/gi,"I")
         .replace(/ENTER/gi,"E")
         .replace(/AI/gi,"A");
 
-        console.log(textoDescodificado);
+        document.getElementById('resultado').value = textoDescodificado;
     }
 }
 
