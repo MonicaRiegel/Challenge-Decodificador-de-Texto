@@ -7,7 +7,8 @@ function criptografarTexto() {
         .replace(/O/gi,"OBTER")
         .replace(/U/gi,"UFAT");
 
-        document.getElementById('resultado').value = textoDecodificado;   
+         document.getElementById('resultado').value = textoDecodificado;  
+         telaResultado(); 
     }
 }
 
@@ -22,8 +23,14 @@ function descriptografarTexto() {
         .replace(/AI/gi,"A");
 
         document.getElementById('resultado').value = textoDescodificado;
+        telaResultado();
     }
 }
 
 
-
+function telaResultado() {
+    let inicio = document.getElementById('telainicial');
+    inicio.style.display = "none";
+    resultado.style.display = "block";
+    reultado.textContent = " ";
+}

@@ -140,11 +140,11 @@ body{
     justify-content: center;
 }
 
-.conteudo__resultado__img {
+.conteudo__resultado__inicio__img {
     width: 336px;
 }
 
-.conteudo__resultado__titulo {
+.conteudo__resultado__inicio__titulo {
     width: 336px;
     font-family: var(--fonte-principal);
     font-weight: 700;
@@ -153,7 +153,7 @@ body{
     text-align: center;
 }
 
-.conteudo__resultado__texto {
+.conteudo__resultado__inicio__texto {
     width: 336px;
     font-family: var(--fonte-principal);
     font-weight: 400;
