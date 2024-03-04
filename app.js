@@ -1,11 +1,13 @@
 function criptografarTexto() {
     let texto = document.querySelector('textarea').value;
-    if (texto.match('[A-Z]')) {
-        let textoDecodificado = texto.replace(/A/gi,"AI")
-        .replace(/E/gi,"ENTER")
-        .replace(/I/gi,"IMES")
-        .replace(/O/gi,"OBTER")
-        .replace(/U/gi,"UFAT");
+    if (texto.match('[A-Z]')){
+        alert('Apenas letras minúsculas e sem acento')
+    } else {
+        let textoDecodificado = texto.replace(/A/gi,"ai")
+        .replace(/E/gi,"enter")
+        .replace(/I/gi,"imes")
+        .replace(/O/gi,"obter")
+        .replace(/U/gi,"ufat");
 
          document.getElementById('resultado').value = textoDecodificado;  
          telaResultado(); 
@@ -16,11 +18,13 @@ function criptografarTexto() {
 function descriptografarTexto() {
     textoDecodificado = document.querySelector('textarea').value;
     if (textoDecodificado.match('[A-Z]')) {
-        let textoDescodificado = textoDecodificado.replace(/UFAT/gi,"U")
-        .replace(/OBTER/gi,"O")
-        .replace(/IMES/gi,"I")
-        .replace(/ENTER/gi,"E")
-        .replace(/AI/gi,"A");
+        alert('Apenas letras minúsculas e sem acento')
+    } else {
+        let textoDescodificado = textoDecodificado.replace(/UFAT/gi,"u")
+        .replace(/OBTER/gi,"o")
+        .replace(/IMES/gi,"i")
+        .replace(/ENTER/gi,"e")
+        .replace(/AI/gi,"a");
 
         document.getElementById('resultado').value = textoDescodificado;
         telaResultado();
