@@ -140,13 +140,6 @@ body{
     justify-content: center;
 }
 
-.conteudo__resultado__criptografia {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
 .conteudo__resultado__criptografia__texto {
     width: 336px;
     height: 781px;
@@ -157,6 +150,7 @@ body{
     font-weight: 400;
     line-height: 36px;
     color: var(--cor-quarta);
+    border: var(--cor-terceira);
 }
 
 .conteudo__resultado__criptografia__botao{
