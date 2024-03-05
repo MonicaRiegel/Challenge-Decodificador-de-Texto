@@ -1,5 +1,5 @@
 function criptografarTexto() {
-    let texto = document.querySelector('textarea').value;
+    let texto = document.getElementById('texto').value;
     if (texto.match('[A-Z]')){
         alert('Apenas letras minúsculas e sem acento')
     } else {
@@ -16,11 +16,11 @@ function criptografarTexto() {
 
 
 function descriptografarTexto() {
-    textoDecodificado = document.querySelector('textarea').value;
-    if (textoDecodificado.match('[A-Z]')) {
+    textoResposta = document.getElementById('texto').value;
+    if (textoResposta.match('[A-Z]')) {
         alert('Apenas letras minúsculas e sem acento')
     } else {
-        let textoDescodificado = textoDecodificado.replace(/UFAT/gi,"u")
+        let textoDescodificado = textoResposta.replace(/UFAT/gi,"u")
         .replace(/OBTER/gi,"o")
         .replace(/IMES/gi,"i")
         .replace(/ENTER/gi,"e")
@@ -35,6 +35,12 @@ function descriptografarTexto() {
 function telaResultado() {
     let inicio = document.getElementById('telainicial');
     inicio.style.display = "none";
-    resultado.style.display = "block";
+    resposta.style.display = "block";
     reultado.textContent = " ";
 }
+
+function copiar() {
+    let textoCopiado = document.getElementById('resultado').value;
+    document.getElementById('texto').value = textoCopiado;
+}
+

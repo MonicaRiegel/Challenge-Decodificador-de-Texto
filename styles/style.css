@@ -140,6 +140,37 @@ body{
     justify-content: center;
 }
 
+.conteudo__resultado__criptografia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.conteudo__resultado__criptografia__texto {
+    width: 336px;
+    height: 781px;
+    top: 72px;
+    left: 1032px;
+    font-family: var(--fonte-principal);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: var(--cor-quarta);
+}
+
+.conteudo__resultado__criptografia__botao{
+    width: 336px;
+    height: 67px;
+    top: 885px;
+    left: 1032px;
+    border-radius: 24px;
+    border: 1px;
+    padding: 24px;
+    gap: 8px;
+    color: var(--cor-segunda);
+}
+
 .conteudo__resultado__inicio__img {
     width: 336px;
 }
