@@ -44,3 +44,4 @@ function copiar() {
     document.getElementById('texto').value = textoCopiado;
 }
 
+
