@@ -1,12 +1,12 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
 
 :root {
-    --cor-primeira: #F3F5FC;
-    --cor-segunda: #0A3871;
+    --cor-primeira: #FFE6E6;
+    --cor-segunda: #FC819E;
     --cor-terceira: #FFFFFF;
-    --cor-quarta: #495057;
-    --cor-quinta: #343A40;
-    --cor-sexta: #D8DFE8;
+    --cor-quarta: #FFCAD4;
+    --cor-quinta: #944E63;
+    --cor-sexta: #FFE3CA;
 
     --fonte-principal: 'Inter', sans-serif;
 }
@@ -17,9 +17,9 @@
 }
 
 .logo {
-    width: 8%;
-    height: 8%;
-    margin: 2%;
+    width: 4%;
+    height: 4%;
+    margin: 0.5%;
 }
 
 body{
@@ -70,6 +70,10 @@ body{
     width: 100%;
     height: 20%;
     gap: 10px;
+}
+
+.conteudo__criptografia__confirmacao__alerta__imagem {
+    width: 3%;
 }
 
 .conteudo__criptografia__confirmacao__alerta__mensagem {
@@ -170,8 +174,8 @@ body{
     align-items: center;
 }
 .conteudo__resultado__inicio__img {
-    width: 100%;
-    margin: 15% 0 0 -5%;
+    width: 70%;
+    margin: 15% 0 5% 5%;
     
 }
 
