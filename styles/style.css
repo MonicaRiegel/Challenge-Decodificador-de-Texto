@@ -239,7 +239,7 @@ body{
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .conteudo__criptografia__confirmacao__botao {
         flex-direction: column;
     }
