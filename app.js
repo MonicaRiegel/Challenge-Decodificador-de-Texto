@@ -6,7 +6,7 @@ function criptografarTexto() {
         let textoDecodificado = texto.replace(/A/gi,"ai")
         .replace(/E/gi,"enter")
         .replace(/I/gi,"imes")
-        .replace(/O/gi,"obter")
+        .replace(/O/gi,"ober")
         .replace(/U/gi,"ufat");
 
          document.getElementById('resultado').value = textoDecodificado;  
@@ -21,7 +21,7 @@ function descriptografarTexto() {
         alert('Apenas letras minúsculas e sem acento')
     } else {
         let textoDescodificado = textoResposta.replace(/UFAT/gi,"u")
-        .replace(/OBTER/gi,"o")
+        .replace(/OBER/gi,"o")
         .replace(/IMES/gi,"i")
         .replace(/ENTER/gi,"e")
         .replace(/AI/gi,"a");
